@@ -1,4 +1,4 @@
-package com.lyy.fengxiao.algorithm;
+package com.lyy.fengxiao.algorithm.linkedlist;
 
 public class RemoveNthFromEnd {
 
