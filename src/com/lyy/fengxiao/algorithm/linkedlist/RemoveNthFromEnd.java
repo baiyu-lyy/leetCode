@@ -3,7 +3,7 @@ package com.lyy.fengxiao.algorithm.linkedlist;
 public class RemoveNthFromEnd {
 
     /**
-     * 问题描述：
+     * 问题描述：19。
      * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
      * 示例：
      * 给定一个链表: 1->2->3->4->5, 和 n = 2.
