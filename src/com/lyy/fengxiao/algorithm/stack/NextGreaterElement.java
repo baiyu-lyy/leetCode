@@ -25,13 +25,11 @@ public class NextGreaterElement {
         Map<Integer,Integer> map=new HashMap<>();
 
         for (int value : nums2) {
-            if (!stack.isEmpty()) {
-                while (!stack.isEmpty()) {
-                    if (stack.peek() < value) {
-                        map.put(stack.pop(), value);
-                    }else {
-                        break;
-                    }
+            while (!stack.isEmpty()) {
+                if (stack.peek() < value) {
+                    map.put(stack.pop(), value);
+                }else {
+                    break;
                 }
             }
             stack.push(value);
