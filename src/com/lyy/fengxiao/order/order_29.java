@@ -1,5 +1,8 @@
 package com.lyy.fengxiao.order;
 
+/**
+ * 两数相除 --倍乘法
+ */
 public class order_29 {
 
     public static int divide(int dividend, int divisor) {
@@ -7,18 +10,18 @@ public class order_29 {
         boolean flag = (dividend > 0 && divisor > 0) || (dividend < 0 && divisor < 0);
 
         //全转成负数防止 溢出
-        dividend = dividend > 0 ? -dividend : dividend;
-        divisor = divisor > 0 ? -divisor : divisor;
+        long a = dividend > 0 ? -dividend : dividend;
+        long b = divisor > 0 ? -divisor : divisor;
         long result = 0;
-        while (dividend <= divisor) {
+        while (a <= b) {
             int cnt = 0;
-            while ((divisor << cnt) > dividend) {
+            while ((b << cnt) > a) {
                 cnt++;
             }
             if (cnt >= 1) {
                 cnt = cnt - 1;
             }
-            dividend = dividend - (divisor << cnt);
+            a = a - (b << cnt);
             result += 1L << cnt;
         }
 
