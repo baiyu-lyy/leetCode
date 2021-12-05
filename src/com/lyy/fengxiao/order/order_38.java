@@ -2,6 +2,7 @@ package com.lyy.fengxiao.order;
 
 public class order_38 {
 
+    //递归
     public static String countAndSay(int n) {
         if (n == 1) {
             return "1";
@@ -30,6 +31,7 @@ public class order_38 {
         return result;
     }
 
+    //遍历
     public static String countAndSay1(int n) {
         if (n == 1) {
             return "1";
