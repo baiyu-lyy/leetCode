@@ -49,7 +49,7 @@ public class order_39 {
     }
 
     private static void backTrack(int[] candidates, List<List<Integer>> result, List<Integer> paths, int target, int index) {
-        if (candidates[0] > target) {
+        if (candidates[index] > target) {
             if (paths.size() > 0) {
                 paths.remove(paths.size() - 1);
             }
